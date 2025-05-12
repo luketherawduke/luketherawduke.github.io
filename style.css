@@ -105,6 +105,41 @@ a:hover{
     height: auto;
 }
 
+/*/////////////////MENU-BAR/////////////////*/
+
+/* Farve på baggrund af top af navigations bar */
+.topnav {
+    background-color: cornflowerblue;
+    overflow: hidden;
+
+}
+
+/* Style af links i navigations bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, "times", "serif";
+    font-weight: bold;
+}
+
+/* Farve af links på hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    opacity: 60%;
+}
+
+/* Farve til det aktive link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/*----------------------------------------*/
 
 /*En menu af links med hover-effekter
   Indhold i flere kolonner (uden at bruge en tabel!)
