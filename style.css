@@ -13,8 +13,20 @@ body{
     background-position: right;
     background-size: 2000px;
     margin-left: 30px;
-    width: 700px;
-    height: 400px;
+}
+
+#forside {
+    right: 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#forside,
+#background,
+.image img {
+    width: 100%;
+    max-width: 800px; /* eller passende max bredde */
+    height: auto;
 }
 
 .form {
@@ -86,23 +98,11 @@ a:hover{
     font-size: 24px;
 }
 
-#forside {
-    width: 800px;
-    height: auto;
-    right: 0;
-    position: relative;
-    margin-bottom: 15px;
-}
-
 .container {
     display: flex; /*Placerer elementerne side om side*/
+    flex-wrap: wrap; /* ← gør at indholdet hopper ned på næste linje */
     align-items: center; /* Justerer elementerne lodret */
     gap: 20px; /* Laver mellemrum mellem billedet og teksten */
-}
-
-.image img {
-    width: 900px; /* Sørg for, at billedet ikke bliver for stort */
-    height: auto;
 }
 
 /*/////////////////MENU-BAR/////////////////*/
@@ -137,6 +137,10 @@ a:hover{
 .topnav a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /*----------------------------------------*/
